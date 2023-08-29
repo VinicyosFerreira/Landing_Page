@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;;
+}
+
+input[type="text"] , input[type="email"] {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    height: 30px;
+    margin-top: 7px;
+    border: 1px solid #707070;
+}
+
+button {
+    width: 100%;
+    height: 39px;
+    display: block;
+    color: #888888;
+    background-color: white;
+    border: 1px solid #707070; 
+    border-radius: 4px;
+    padding: 11px 0px 10px 0px;
+}
+
+/************* Header ***************/
+header {
+    width: 100%;
+    background: #707070;
+    color: #FFFFFF;
+    height: 398px;
+    font-size: 14px;
+    margin-bottom: 29px;
+}
+
+.area-titulo {
+    padding-top: 66px;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+header div h1 {
+    font-size: 40px;
+    width: 90%;
+}
+
+.descritivo {
+    margin-right: 32px;
+    margin-top: 9px;
+}
+
+.area-produtos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 56px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.caixa1 , .caixa3 {
+    margin-right: 21px;
+}
+
+.area-produtos div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    color : #888888;
+    width: 45%;
+    height: 40px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+}
+
+main {
+    font-size: 14px;
+    color : #888888;
+}
+
+.texto h3 {
+    color : #888888;
+    margin-bottom: 17px;
+    margin-left: 16px;
+}
+
+.texto p {
+    color: #888888;
+    margin-left: 16px;
+    margin-right: 18px;
+}
+
+.segundo-paragrafo {
+    margin-top: 17px;
+}
+
+
+input[type="radio"] {
+    margin-bottom: 20px;
+}
+
+.generoM{
+    padding-right: 14px;
+}
+
+main form {
+    margin-top: 30px;
+    margin-left: 16px;
+    margin-right: 18px;
+}
+
+.selecao-especial {
+    margin-top: 83px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+.selecao-especial h3 {
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+.produtos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.caixa-vazia {
+    margin-left: 10px;
+    margin-right: 23px;
+    margin-bottom: 30px;
+    width: 40%;
+    height: 129px;
+    border: 1px solid #707070;
+}
+
+.info-produtos {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.info-produtos .nome {
+    margin-bottom: 13px;
+}
+
+.info-produtos .preco {
+    margin-bottom: 6px;
+    font-size: 12px;
+}
+
+.info-produtos .promocao {
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.info-produtos .valor-parcelado {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.info-produtos button {
+    border-radius: 4px;
+    height : 30px;
+    padding: 6px 0px 6px 0px;
+    width: 100%;
+}
+
+.mais-produtos {
+    width: 62%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 129px;
+}
+
+.mais-produtos a {
+    text-decoration: none;
+}
+
+.compartilhar h3 {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.compartilhar p {
+    margin-left: 17px;
+    margin-right: 17px;
+    text-align: center;
+}
+
+.indicacao label , .indicacao input  {
+    margin-left: 9px;
+    margin-right: 12px;
+}
+
+.indicacao button {
+    margin: 42px auto 0 auto;
+    width: 67.5%;
+}
+
+footer {
+    margin-top: 85px;
+    background: #707070;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 158px;
+    color : #ffffff
+}
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+}
