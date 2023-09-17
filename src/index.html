@@ -23,10 +23,10 @@
             </div>
 
             <section class="area-produtos">
-                 <div class="caixa1">Conheça a Linx</div>   
-                 <div>Ajude o algoritmo </div>  
-                 <div class="caixa3">Seus produtos</div>  
-                 <div>Compartilhe</div>  
+                 <article class="caixa1">Conheça a Linx</article>   
+                 <article>Ajude o algoritmo </article>  
+                 <article class="caixa3">Seus produtos</article>  
+                 <article>Compartilhe</article>  
             </section>
         </header>
 
@@ -76,7 +76,7 @@
                     name="genero"
                     id="M"
                     value = "masculino"
-                    >
+                    />
                     <label class="generoM">Masculino</label>
                         
                     <input 
@@ -84,9 +84,8 @@
                     id="F"
                     type="radio"
                     value="feminino"
-                    >      
+                    />      
                     <label class="generoF">Feminino</label>
-                    </div>
 
                     <button type="submit">Enviar</button>
                 </form>
@@ -94,16 +93,20 @@
 
 
             <section class="selecao-especial">
-                 <h3>Uma seleção especial</h3>
-
-                    <section class="produtos"> 
-                      
-                    </section>
-
-                 <section class="mais-produtos">
-                    <a href=""><button id="moreProductsButton" onclick="moreProductsApi(event)">Ainda mais produto aqui!</button></a>
+                <section class="titulo-selecao-especial">
+                    <hr>
+                    <h3>Uma seleção especial</h3>
                 </section>
 
+                <section class="produtos"> 
+                      
+                </section>
+
+                 <section class="mais-produtos">
+                    <a href="">
+                        <button id="moreProductsButton" onclick="moreProductsApi(event)">Ainda mais produto aqui!</button>
+                    </a>
+                </section>
             </section>
 
             <section class="compartilhar">
@@ -114,9 +117,9 @@
                     <div class="indicacao">
                         <form>
                             <label>Nome de seu amigo: </label>
-                            <input type="text" name="amigo" id="amigo">
+                            <input type="text" name="amigo" id="nomeAmigo">
                             <label>Email dele: </label>
-                            <input type="text" name="amigo" id="amigo">
+                            <input type="email" name="amigo" id="emailAmigo">
                             <button type="submit" class="botao">Enviar</button>
                         </form>
                     </div>

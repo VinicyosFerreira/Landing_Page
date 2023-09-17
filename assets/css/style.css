@@ -32,7 +32,7 @@ button {
 /************* Header ***************/
 header {
     width: 100%;
-    background: #707070;
+    background-color: #707070;
     color: #FFFFFF;
     height: 398px;
     font-size: 14px;
@@ -56,6 +56,7 @@ header div h1 {
     margin-top: 9px;
 }
 
+/********** Area Produtos ************/
 .area-produtos {
     display: flex;
     flex-direction: row;
@@ -69,7 +70,7 @@ header div h1 {
     margin-right: 21px;
 }
 
-.area-produtos div {
+.area-produtos article {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,15 +118,33 @@ main form {
     margin-right: 18px;
 }
 
+/******** Selecao Especial **********/
 .selecao-especial {
     margin-top: 83px;
     margin-left: 0px;
     width: 100%;
 }
 
-.selecao-especial h3 {
-    text-align: center;
+.titulo-selecao-especial {
+    position: relative;
     margin-bottom: 23px;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-selecao-especial h3 {
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+    background-color: white;
+    padding: 0px 17px;
+}
+
+.titulo-selecao-especial hr {
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    z-index: 1;
 }
 
 .produtos {
@@ -176,6 +195,7 @@ main form {
     width: 100%;
 }
 
+/********** Mais Produtos ***********/
 .mais-produtos {
     width: 62%;
     margin: 0 auto;
@@ -208,6 +228,7 @@ main form {
     width: 67.5%;
 }
 
+/****** Footer *******/
 footer {
     margin-top: 85px;
     background: #707070;
