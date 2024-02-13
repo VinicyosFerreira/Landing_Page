@@ -6,9 +6,9 @@ const ComponenteMobile = (props) => {
                     {props.produtos.map((produto , index) => {
                         return (
                             <Fragment key={'produtos' + index}>
-                                <section className="product-image">
+                                {/* <section className="product-image">
                                         <img src={produto.image} alt= {'Produto' + index}/>
-                                </section>
+                                </section> */}
                                 <section className="info-products">
                                     <p className="name">{produto.name}</p>
                                     <p className="price">De: R${produto.oldPrice}</p>

@@ -7,9 +7,9 @@ const DesktopMobile = (props) => {
                         return (
                             <Fragment key={'produtos' + index}>
                                 <section className='list-products'>
-                                    <section className='product-image'>
+                                    {/* <section className='product-image'>
                                         <img src={produto.image} alt= {'Produto' + index}/>
-                                    </section>
+                                    </section> */}
                                     <section className='info-products'>
                                         <p className="name">{produto.name}</p>
                                         <p className="old-price">De: R${produto.oldPrice}</p>
