@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;;
+}
+
+input[type="text"] , input[type="email"] {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    height: 30px;
+    margin-top: 7px;
+    border: 1px solid #707070;
+}
+
+button {
+    width: 100%;
+    height: 39px;
+    display: block;
+    color: #888888;
+    background-color: white;
+    border: 1px solid #707070; 
+    border-radius: 4px;
+    padding: 11px 0px 10px 0px;
+}
+
+/************* Header ***************/
+header {
+    width: 100%;
+    background-color: #707070;
+    color: #FFFFFF;
+    height: 398px;
+    font-size: 14px;
+    margin-bottom: 29px;
+}
+
+.title-area {
+    padding-top: 66px;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+header div h1 {
+    font-size: 40px;
+    width: 90%;
+}
+
+.description-title {
+    margin-right: 32px;
+    margin-top: 9px;
+}
+
+/********** HEADER - Area de informações de caixas ************/
+.info-boxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 56px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.info-box-1 , .info-box-3 {
+    margin-right: 21px;
+}
+
+.info-boxes article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    color : #888888;
+    width: 45%;
+    height: 40px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+}
+
+/******** Começo do conteudo principal ********/
+main {
+    font-size: 14px;
+    color : #888888;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.accurate-algorithm h3 {
+    color : #888888;
+    margin-bottom: 17px;
+    margin-left: 16px;
+}
+
+.accurate-algorithm p {
+    color: #888888;
+    margin-left: 16px;
+    margin-right: 18px;
+}
+
+.accurate-algorithm :nth-child(3) {
+    margin-top: 17px;
+}
+
+input[type="radio"] {
+    margin-bottom: 20px;
+}
+
+.genderM{
+    padding-right: 14px;
+}
+
+.error {
+    color : red;
+    padding-bottom: 10px;
+}
+
+main form {
+    margin-top: 30px;
+    margin-left: 16px;
+    margin-right: 18px;
+}
+
+/******** Selecao Especial **********/
+.special-selection {
+    margin-top: 83px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+.special-selection-title{
+    position: relative;
+    margin-bottom: 23px;
+    display: flex;
+    justify-content: center;
+}
+
+.special-selection-title h3 {
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    background-color: white;
+    padding: 0px 17px;
+}
+
+.special-selection-title  hr {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    z-index: 0;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.product-image {
+    margin-left: 10px;
+    margin-right: 23px;
+    margin-bottom: 30px;
+    width: 35%;
+    height: 129px;
+}
+
+.info-products {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.info-products .name {
+    margin-bottom: 13px;
+}
+
+.info-products .old-price {
+    margin-bottom: 6px;
+    font-size: 12px;
+}
+
+.info-products .price {
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.info-products .installments-count {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.info-products button {
+    border-radius: 4px;
+    height : 30px;
+    padding: 6px 0px 6px 0px;
+    width: 100%;
+}
+
+/********** Mais Produtos ***********/
+.more-products {
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 129px auto;
+}
+
+.more-products a {
+    text-decoration: none;
+}
+
+.max-pages {
+    margin-bottom: 18px;
+    color : #888888;
+    width: 280px;
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: 600;
+}
+
+/******* COMPARTILHAR *******/
+.share-area h3 {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.share-area-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.share-area-title h3 {
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    background-color: white;
+    padding: 0px 17px;
+}
+
+.share-area-title hr {
+    position: absolute;
+    bottom: 35px;
+    width: 100%;
+    z-index: 0;
+}
+
+.share-area p {
+    margin-left: 17px;
+    margin-right: 17px;
+    text-align: center;
+}
+
+.indication label , .indication input  {
+    margin-left: 9px;
+    margin-right: 12px;
+}
+
+.indication button {
+    margin: 42px auto 0 auto;
+    width: 67.5%;
+}
+
+/****** Footer *******/
+footer {
+    margin-top: 85px;
+    background: #707070;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 158px;
+    color : #ffffff
+}
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+}

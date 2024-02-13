@@ -1,0 +1,154 @@
+@media (min-width : 700px) {
+    .products {
+        width: 62%;
+        margin: 0 auto;
+    }
+
+    .product-image {
+        margin: 0px auto 30px auto;
+        text-align: center;
+    }
+
+    .more-products {
+        display: flex;
+        justify-content: center;
+    }
+
+    .more-products button {
+        margin-left: 35px;
+        width: 260px;
+    }
+
+    .max-pages {
+        margin-left: 25px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    /*************HEADER******************/
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title-area {
+        padding-top: 0px;
+        margin: 0px auto; 
+    }
+
+    .title-area h3 , .title-area h1 , .description-title{
+        text-align: center;
+    }
+
+    header div h1  {
+        width: initial;
+        margin-bottom: 24px;
+    }
+
+    .description-title{
+        margin-right: 0px;
+    }
+
+    /********** HEADER - Area Produtos ************/
+    .info-boxes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        width: 1080px;
+    }
+
+
+    .info-boxes article {
+        margin-right: 40px;
+        width: 160px;
+    }
+
+    .info-boxes article:nth-child(4) {
+        margin-right: 0px;
+    }
+
+    /******** Começo do conteudo principal ********/
+    main {
+        font-size: 14px;
+        color : #888888;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    main .form-register {
+        width: 350px;
+        margin-top: 0px;
+    }
+
+    main form {
+        margin-top: 0px;
+    }
+
+    .accurate-algorithm {
+        width: 620px;
+    }
+
+
+    /****** SELEÇÃO ESPECIAL **********/
+    .special-selection-title  hr {
+        position: absolute;
+        bottom: 8px;
+        width: 65%;
+        z-index: 0;
+    }
+    
+    .products {
+        width : 1080px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-image , .info-products {
+        width: 200px;
+        height: 150px;
+        margin: 0px 30px;
+    }
+
+    .more-products button {
+        width: 260px;
+        margin : 0 auto;
+    }
+
+    .max-pages {
+        margin-left: initial;
+    }
+
+    /********** COMPARTILHAR ************/
+    .share-area {
+        width: 1000px;
+    }
+
+    .indication form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .indication input {
+        width: 340px;
+    }
+
+    .indication #nomeAmigo {
+        margin-right: 30px;
+    }
+
+    .indication button {
+       width: 260px;
+    }
+
+
+}
