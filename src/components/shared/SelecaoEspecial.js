@@ -5,12 +5,12 @@ import DesktopMobile from '../desktop/DesktopComponent';
 function SelecaoEspecial () {
 
     const [produtos , setProdutos] = useState([]);
-    const [pagina , setPagina] = useState(1);
     const [tela , setTela] = useState(window.innerWidth);
-    const maxPages = 5;
-    const messageMaxPages = <p className='max-pages'>Não há mais produtos para listar</p>
+    const [limit , setLimit] = useState(8);
+    const [message , setMessage] = useState(false);
+    const limitProduct = 20;
 
-    function handleResize() {
+    const handleResize = () => {
         setTela(window.innerWidth);
     }
 
@@ -25,31 +25,40 @@ function SelecaoEspecial () {
     useEffect(() => {
         async function apiProdutos() {
             try {
-                const api = await fetch (`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${pagina}`)
+                const api = await fetch (`https://fakestoreapi.com/products?limit=${limit}`)
                 const resposta = await api.json();
-                if(pagina === 1) {
-                     setProdutos(resposta.products);
-                 } else {
-                     setProdutos(prevProdutos => [...prevProdutos , ...resposta.products]);
-                 }
-                 
+   
+                if(limit <= 8 ) {
+                    setProdutos(resposta);
+                } else {
+                   setProdutos(prevState => {
+                       const newProducts = resposta.filter((newProduct => {
+                        return !produtos.some((produto => { 
+                            return produto.id === newProduct.id
+                       }))
+                    }))
+
+                    return [...prevState , ...newProducts]
+                })
+                }
             } catch(error) {
                 console.log(error);
             }
         }
         apiProdutos()
-    } , [pagina])
+    } , [limit])
 
 
     async function carregarProdutosApi(e) {
-        if(pagina <= maxPages) {
+        if(limit <= limitProduct) {
             e.preventDefault();
-            console.log(pagina , maxPages);
-            setPagina(pagina + 1);
+            setLimit(limit + 8); 
+        } else {
+            e.preventDefault();
+            setMessage(true);
         }
-        e.preventDefault();
     }
-    
+
     return (
         <section className="special-selection">
             <section className="special-selection-title">
@@ -61,7 +70,7 @@ function SelecaoEspecial () {
                 : <DesktopMobile produtos={produtos}></DesktopMobile>
             }
             <section className="more-products">
-            {pagina > 5 && messageMaxPages}
+            {message && <p className='max-products'>Não há mais produtos para listar</p>}
                 <a href="#">
                     <button id="carregar-produtos-api" onClick={carregarProdutosApi}>Ainda mais produto aqui!</button>
                 </a>

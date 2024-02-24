@@ -19,7 +19,7 @@
         width: 260px;
     }
 
-    .max-pages {
+    .max-products {
         margin-left: 25px;
     }
 
@@ -114,6 +114,10 @@
         width: 200px;
         height: 150px;
         margin: 0px 30px;
+    }
+
+    .info-products .name {
+        height: 50px;
     }
 
     .more-products button {

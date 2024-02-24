@@ -160,12 +160,23 @@ main form {
     flex-wrap: wrap;
 }
 
+.list-products {
+    height: 300px;
+}
+
+
 .product-image {
     margin-left: 10px;
     margin-right: 23px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     width: 35%;
     height: 129px;
+}
+
+.product-image img {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
 }
 
 .info-products {
@@ -176,6 +187,7 @@ main form {
 
 .info-products .name {
     margin-bottom: 13px;
+    width: 100%;
 }
 
 .info-products .old-price {
@@ -187,11 +199,6 @@ main form {
     margin-bottom: 6px;
     font-size: 16px;
     font-weight: bolder;
-}
-
-.info-products .installments-count {
-    margin-bottom: 10px;
-    font-size: 12px;
 }
 
 .info-products button {
@@ -215,7 +222,7 @@ main form {
     text-decoration: none;
 }
 
-.max-pages {
+.max-products {
     margin-bottom: 18px;
     color : #888888;
     width: 280px;

@@ -3,19 +3,16 @@ import { Fragment } from "react"
 const ComponenteMobile = (props) => {
          return (
                 <section className="products"> 
-                    {props.produtos.map((produto , index) => {
+                    {props.produtos.map((produto) => {
                         return (
-                            <Fragment key={'produtos' + index}>
-                                {/* <section className="product-image">
-                                        <img src={produto.image} alt= {'Produto' + index}/>
-                                </section> */}
+                            <Fragment key={'produtos' + produto.id}>
+                                <section className="product-image">
+                                        <img src={produto.image} alt= {'Produto' + produto.id}/>
+                                </section> 
                                 <section className="info-products">
-                                    <p className="name">{produto.name}</p>
-                                    <p className="price">De: R${produto.oldPrice}</p>
-                                    <p className="old-price">Por: R${produto.price}</p>
-                                    <p className="installments-count">
-                                        ou R${produto.installments.count} de R${produto.installments.value}
-                                    </p>
+                                    <p className="name">{produto.title}</p>
+                                    <p className="price">De: R${produto.category}</p>
+                                    <p className="old-price">Por: R${produto.price}</p>        
                                     <button>Comprar</button>
                                 </section>
                             </Fragment>
