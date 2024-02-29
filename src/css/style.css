@@ -272,6 +272,7 @@ main form {
 .indication button {
     margin: 42px auto 0 auto;
     width: 67.5%;
+    cursor: pointer;
 }
 
 /****** Footer *******/

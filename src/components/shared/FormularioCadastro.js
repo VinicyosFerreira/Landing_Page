@@ -6,9 +6,8 @@ const error = (message) => {
 }
 
 const handleSubmit = (values) => {
-     return values;
+     console.log(values)
 }
-
 
 function FormularioCadastro() {
 
@@ -17,7 +16,7 @@ function FormularioCadastro() {
             
             <Formik
                 initialValues={valoresIniciais}
-                validationSchema={esquemaValidacao}
+                validationSchema={esquemaValidacao}  
                 onSubmit={handleSubmit}
             >
                 <Form>
@@ -69,7 +68,7 @@ function FormularioCadastro() {
                     />
                     <label className="genderF" htmlFor="F">Feminino</label>
 
-                    <ErrorMessage name="gender" render={error}/>
+                    <ErrorMessage name="genero" render={error}/>
 
                     <button type="submit">Submit</button>
                 </Form>
