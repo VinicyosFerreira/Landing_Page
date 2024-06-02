@@ -6,8 +6,8 @@ function SelecaoEspecial () {
 
     const [produtos , setProdutos] = useState([]);
     const [tela , setTela] = useState(window.innerWidth);
-    const [limit , setLimit] = useState(8);
-    const [message , setMessage] = useState(false);
+    const [limite , setLimite] = useState(8);
+    const [mensagem , setMensagem] = useState(false);
     const limitProduct = 20;
 
     const handleResize = () => {
@@ -25,19 +25,16 @@ function SelecaoEspecial () {
     useEffect(() => {
         async function apiProdutos() {
             try {
-                const api = await fetch (`https://fakestoreapi.com/products?limit=${limit}`)
+                const api = await fetch (`https://fakestoreapi.com/products?limit=${limite}`)
                 const resposta = await api.json();
    
-                if(limit <= 8 ) {
+                if(limite <= 8 ) {
                     setProdutos(resposta);
                 } else {
-                   setProdutos(prevState => {
+                    setProdutos(prevState => {  
                        const newProducts = resposta.filter((newProduct => {
-                        return !produtos.some((produto => { 
-                            return produto.id === newProduct.id
-                       }))
+                        return !prevState.some((produto) => produto.id === newProduct.id)
                     }))
-
                     return [...prevState , ...newProducts]
                 })
                 }
@@ -46,16 +43,16 @@ function SelecaoEspecial () {
             }
         }
         apiProdutos()
-    } , [limit])
+    } , [limite , produtos])
 
 
     async function carregarProdutosApi(e) {
-        if(limit <= limitProduct) {
+        if(limite <= limitProduct) {
             e.preventDefault();
-            setLimit(limit + 8); 
+            setLimite(limite + 8); 
         } else {
             e.preventDefault();
-            setMessage(true);
+            setMensagem(true);
         }
     }
 
@@ -70,7 +67,7 @@ function SelecaoEspecial () {
                 : <DesktopMobile produtos={produtos}></DesktopMobile>
             }
             <section className="more-products">
-            {message && <p className='max-products'>Não há mais produtos para listar</p>}
+            {mensagem && <p className='max-products'>Não há mais produtos para listar</p>}
                 <a href="#">
                     <button id="carregar-produtos-api" onClick={carregarProdutosApi}>Ainda mais produto aqui!</button>
                 </a>

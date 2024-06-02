@@ -1,7 +1,5 @@
 const DesktopMobile = (props) => {
 
-
-
          return (
                 <section className="products"> 
                     {props.produtos && props.produtos.map((produto) => {

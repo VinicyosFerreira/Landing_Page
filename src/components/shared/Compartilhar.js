@@ -1,15 +1,17 @@
 import {Formik , Form , Field , ErrorMessage} from 'formik'
 import { valoresIniciaisAmigo , esquemaValidacao2} from "./Validacao"
 
-const error = (message) => {
-    return <p className="error">{message}</p>
-}
-
-const handleSubmit = (values) => {
-    console.log(values)
-}
 
 function Compartilhar() {
+
+    const error = (message) => {
+        return <p className="error">{message}</p>
+    }
+
+    const handleSubmit = (values) => {
+        console.log(values)
+    }
+
     return (
         <section className="share-area">
             <section className="share-area-title">
@@ -33,15 +35,15 @@ function Compartilhar() {
                                     <label htmlFor='nome'>Nome de seu amigo: </label>
                                     <Field 
                                     type="text"
-                                    placeholder= 
-                                     "Nome de seu amigo" 
+                                    placeholder= "Nome de seu amigo" 
                                      name="nomeAmigo" 
                                      id="nome"
                                      autoComplete="nome"
                                      />
+                                    <ErrorMessage name='nomeAmigo' render={error}/>
                                 </div>
 
-                                <ErrorMessage name='nome' render={error}/>
+                 
 
                                 <div>
                                     <label htmlFor='email'>Email dele: </label>
@@ -52,9 +54,9 @@ function Compartilhar() {
                                     id="email"
                                     autoComplete="email"
                                     />
+                                     <ErrorMessage name='emailAmigo' render={error}/>
                                 </div>
         
-                                <ErrorMessage name='email' render={error}/>
 
                                 <button type="submit" className="botao">Enviar</button>
                             </Form>
