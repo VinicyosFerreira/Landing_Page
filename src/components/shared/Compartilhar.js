@@ -34,16 +34,14 @@ function Compartilhar() {
                                 <div>
                                     <label htmlFor='nome'>Nome de seu amigo: </label>
                                     <Field 
-                                    type="text"
-                                    placeholder= "Nome de seu amigo" 
+                                     type="text"
+                                     placeholder= "Nome de seu amigo" 
                                      name="nomeAmigo" 
-                                     id="nome"
-                                     autoComplete="nome"
+                                     id="nomeAmigo"
+                                     autoComplete="name"
                                      />
                                     <ErrorMessage name='nomeAmigo' render={error}/>
-                                </div>
-
-                 
+                                </div>              
 
                                 <div>
                                     <label htmlFor='email'>Email dele: </label>
@@ -51,7 +49,7 @@ function Compartilhar() {
                                     type="email" 
                                     name="emailAmigo" 
                                     placeholder="Email de seu amigo" 
-                                    id="email"
+                                    id="emailAmigo"
                                     autoComplete="email"
                                     />
                                      <ErrorMessage name='emailAmigo' render={error}/>

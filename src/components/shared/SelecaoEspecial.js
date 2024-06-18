@@ -67,10 +67,8 @@ function SelecaoEspecial () {
                 : <DesktopMobile produtos={produtos}></DesktopMobile>
             }
             <section className="more-products">
-            {mensagem && <p className='max-products'>Não há mais produtos para listar</p>}
-                <a href="#">
-                    <button id="carregar-produtos-api" onClick={carregarProdutosApi}>Ainda mais produto aqui!</button>
-                </a>
+              {mensagem && <p className='max-products'>Não há mais produtos para listar</p>}
+              <button id="carregar-produtos-api" onClick={carregarProdutosApi}>Ainda mais produto aqui!</button>
             </section>
         </section>
     )

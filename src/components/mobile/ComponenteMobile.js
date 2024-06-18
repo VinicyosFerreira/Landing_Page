@@ -11,8 +11,8 @@ const ComponenteMobile = (props) => {
                                 </section> 
                                 <section className="info-products">
                                     <p className="name">{produto.title}</p>
-                                    <p className="price">De: R${produto.category}</p>
-                                    <p className="old-price">Por: R${produto.price}</p>        
+                                    <p className="price">{produto.category}</p>
+                                    <p className="old-price">R${produto.price}</p>        
                                     <button>Comprar</button>
                                 </section>
                             </Fragment>

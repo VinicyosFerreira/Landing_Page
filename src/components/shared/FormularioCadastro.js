@@ -26,7 +26,7 @@ function FormularioCadastro() {
                         placeholder="Nome"
                         type="text"
                         id="nome"
-                        autoComplete="nome"
+                        autoComplete="name"
                     />
 
                     <ErrorMessage name="nome" render={error}/>
