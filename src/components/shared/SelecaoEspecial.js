@@ -22,12 +22,15 @@ function SelecaoEspecial () {
         }
     })
 
+   
+
     useEffect(() => {
-        async function apiProdutos() {
+
+        async function apiProdutos() {      
             try {
                 const api = await fetch (`https://fakestoreapi.com/products?limit=${limite}`)
                 const resposta = await api.json();
-   
+    
                 if(limite <= 8 ) {
                     setProdutos(resposta);
                 } else {
@@ -42,8 +45,9 @@ function SelecaoEspecial () {
                 console.log(error);
             }
         }
+        
         apiProdutos()
-    } , [limite , produtos])
+    } , [limite])
 
 
     async function carregarProdutosApi(e) {

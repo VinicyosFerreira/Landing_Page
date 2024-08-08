@@ -166,7 +166,6 @@ main form {
     height: 300px;
 }
 
-
 .product-image {
     margin-left: 10px;
     margin-right: 23px;
@@ -270,9 +269,6 @@ main form {
     margin-top: 15px;
 }
 
-.indication form > div{
-    height: 100px;
-}
 
 .indication label , .indication input  {
     margin-left: 9px;
