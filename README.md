@@ -16,7 +16,7 @@ desenvolvido durante o curso da NewTabAcademy.
 
 ## Tecnologias utilizada 💻
 
-**Front-end:** React.js e Javascript
+**Front-end:** React.js, Javascript, HTML & CSS
 
 ## Propósito 🎯
 
